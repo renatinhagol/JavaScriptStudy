@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>JavaScript Course </title>
+    </head>
+    <body>
+        <!--  when you click the button -->
+        <div id="app">
+            <button onclick="alertSee()"> Press </button>
+        </div>
+
+        <!--  hovering in the button-->
+        <div id="app2">
+            <button onmouseover="alertSee()"> See </button>
+        </div>
+
+        <!-- when you start typing -->
+        <div id="app3">
+            <input onkeypress="alertSee()" />
+        </div>
+
+
+        <script>
+            function alertSee(){
+                alert('Button press');
+            }
+
+        </script>
+    </body>
+</html>

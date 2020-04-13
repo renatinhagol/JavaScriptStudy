@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Course </title>
+    </head>
+    <body>
+        <div id = "app"> </div>
+        <div id = "app2"> 
+            <input id="name"/>
+        </div>
+
+
+        <script>
+            // Element link
+           var linkElement = document.createElement('a');
+           linkElement.setAttribute('href','https://www.google.com.br');
+           
+            // Linked text
+           var textElement = document.createTextNode('Acessar site Google');
+           linkElement.appendChild(textElement);
+
+           // defining where the text should appear
+           var containerElement =  document.querySelector('#app');
+           containerElement.appendChild(linkElement);
+
+
+           // simplifying...
+           var linkElement2 = document.createElement('b');
+           linkElement2.setAttribute('href','https://www.google.com.br');
+           linkElement2.setAttribute('title','Acessar site Google');
+           var inputElement = document.querySelector('#name');
+           containerElement.removeChild(inputElement);
+
+
+        </script>
+    </body>
+</html>

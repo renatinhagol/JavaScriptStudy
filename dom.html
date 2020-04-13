@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Course </title>
+    </head>
+    <body>
+        
+        <div id = "app">
+            <input type="text" name="name" id="name"/>
+            <button class="button"> ADD </button>
+        </div>
+
+        <script>
+           var inputElement = document.getElementById('name'); //Returns the element that id is name
+           var inputElement = document.getElementsByTagName('input'); // Returns a vector with all inputs 
+           var inputElement = document.getElementsByTagName('input')[0]; // Returns only the first input
+           var inputElement = document.getElementsByClassName('name'); // Returns a vector with all class
+           var inputElement = document.getElementsByClassName('name')[0]; // Returns only the first class
+
+           var inputElement = document.querySelector('div#app input'); // looking for an input
+           var inputElement = document.querySelector('input[name=name]');
+
+           var inputElement = document.querySelectorAll('div#app input'); // looking for all input
+
+           // Alert when you click the button
+           var btnElement = document.querySelector('button.button');
+           btnElement.onclick = function(){
+               alert('Button press');
+           }
+           
+           // Alert retrieving text
+           var inputElement = document.querySelector('input[name=name]');
+           var btnElement = document.querySelector('button.button');
+           btnElement.onclick = function(){
+               var text  = inputElement.value;
+               alert(text);
+           }
+
+        </script>
+    </body>
+</html>
