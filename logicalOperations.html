@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>JavaScript Course</title>
+    </head>
+    <body>
+
+        <script>
+            // learning about logical operators: AND,OR,NOT
+
+            var sexo =  'M', idade = 23;
+
+            // Using AND
+            if(sexo === 'M' && idade >=18 ){
+                console.log('OK');
+            }
+
+            // Using OR
+            if(sexo === 'M' || idade >=18 ){
+                console.log('OK');
+            }
+
+             // Using NOT
+             if(sexo !== 'F'){
+                console.log('OK');
+            }
+
+            // Store the value of the conditions in another variable
+            var masculino;
+            if(sexo === 'M'){
+                masculino = true;
+            } else{
+                masculino = false;
+            } 
+            console.log(masculino);
+
+            // Another option to store the conditions value in another variable
+           var masculino2 = (sexo === 'M');
+           console.log(masculino2);
+
+        </script>
+    </body>
+</html>
