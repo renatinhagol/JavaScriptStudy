@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>JavaScript Course</title>
+    </head>
+    <body>
+
+        <script>
+            function retonaSexo(sexo){
+               // Example using the conditional IF
+               //== checks if the values ​​are equal
+               //=== checks if the values ​​and type are the same
+
+               if(sexo === 'M') {
+                   return 'Male';
+                } else if(sexo === 'F') {
+                    return 'Female'
+                } else {
+                    return 'Other'
+                }
+            }
+
+            function retornaSexo2(sexo) {
+                //Example using the conditional switch
+
+                switch (sexo){
+                    case 'M':
+                        return 'Male';
+                    case 'F':
+                        return 'Female';
+                    default:
+                        return 'Other';
+                }
+            }
+
+            var result = retonaSexo('Fdd')
+            console.log(result);
+
+            var result2 = retornaSexo2('M')
+            console.log(result2);
+
+        </script>
+    </body>
+</html>
